@@ -1,0 +1,11 @@
+.doodle-art {display:block;width:150px;max-width:100%;height:auto;color:#474455;pointer-events:none;flex-shrink:0;}
+.page-heading>.doodle-art {width:135px;transform:rotate(7deg);}
+.personal-module .doodle-art {width:95px;margin:-10px 0 15px auto;transform:rotate(-7deg);}
+.contact-aside .doodle-art {width:210px;margin:0 auto 25px;transform:rotate(4deg);}
+.capture-folder-scene {display:flex;gap:50px;align-items:center;flex-wrap:wrap;}
+.capture-folder-scene>.doodle-art {width:230px;transform:rotate(6deg);margin:25px;}
+.notebook-empty-art {display:flex;justify-content:center;align-items:center;min-height:280px;position:relative;}
+.notebook-empty-art .doodle-art {width:260px;transform:rotate(-5deg);}
+.desktop-sticker {position:absolute;bottom:60px;right:6%;transform:rotate(12deg);color:var(--pink);filter:drop-shadow(3px 3px 0 var(--border));pointer-events:none;}
+.desktop-sticker .pixel-icon {width:45px;height:45px;}
+@media(max-width:650px) {.page-heading>.doodle-art {width:80px;}.capture-folder-scene {gap:5px;justify-content:center;}.capture-folder-scene>.doodle-art {width:165px;margin:10px;}.contact-aside .doodle-art {width:150px;}.notebook-empty-art {min-height:230px;}.notebook-empty-art .doodle-art {width:210px;}.desktop-sticker {display:none;}}

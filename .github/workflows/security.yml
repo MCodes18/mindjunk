@@ -1,0 +1,29 @@
+name: Security checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 5 * * 1'
+permissions:
+  contents: read
+jobs:
+  security:
+    name: Security checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Check committed files before build sanitization
+        run: npm run security:repo
+      - run: npm audit --audit-level=low
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build

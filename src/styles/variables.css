@@ -1,0 +1,15 @@
+:root {
+  --bg: #f7f3e9;
+  --pink: #f3d7df;
+  --green: #d6e8d0;
+  --blue: #d8eaf2;
+  --yellow: #f5e6b5;
+  --text: #30352f;
+  --border: #384039;
+  --muted: #646b63;
+  --shadow: rgba(48,53,47,.1);
+  --window-radius: 7px;
+  --mono: 'IBM Plex Mono', monospace;
+  --hand: 'Patrick Hand', cursive;
+  --taskbar-height: 64px;
+}

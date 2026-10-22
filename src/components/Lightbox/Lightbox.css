@@ -1,0 +1,15 @@
+.lightbox {padding:0; border:1px solid var(--border); border-radius:6px; background:#fcf8ed; color:var(--text); width:min(1000px,calc(100vw - 40px)); max-height:calc(100dvh - 40px); box-shadow:10px 10px 0 #0003; overflow:auto;}
+.lightbox::backdrop {background:#28312dcc;backdrop-filter:blur(3px);}
+.lightbox[open] {animation:appear .2s ease;}
+.lightbox-bar {display:flex; justify-content:space-between;align-items:center;padding:9px 18px;background:var(--pink);border-bottom:1px solid var(--border);font:11px var(--mono);position:sticky;top:0;z-index:2;}
+.lightbox-body {display:flex; gap:35px;align-items:center;padding:30px;}
+.lightbox-image {position:relative; background:#fffdf8; padding:12px 12px 25px;border:1px solid #bcbcac;flex:1;min-width:0;box-shadow:5px 5px 0 var(--shadow);}
+.lightbox-image img {display:block;max-height:59dvh;width:100%;object-fit:contain;}
+.lightbox-tape {position:absolute;top:-10px;left:38%;width:85px;height:25px;background:#d6e8d0bb;transform:rotate(-6deg);}
+.lightbox-caption {flex:0 0 28%;min-width:0;}
+.lightbox-caption h2 {font:34px/1.15 var(--hand);margin:18px 0;}
+.lightbox-caption p {font-size:13px;margin-bottom:20px;}
+.lightbox-caption .meta {font-size:10px;}
+.lightbox-caption .handwritten {font-size:20px;color:#748068;}
+.lightbox-controls {display:flex;justify-content:space-between;align-items:center;padding:0 30px 24px;gap:12px;}
+@media(max-width:650px) {.lightbox {width:calc(100vw - 24px);max-height:calc(100dvh - 24px);} .lightbox-body {flex-direction:column;gap:22px;padding:24px 20px;} .lightbox-image {width:100%;} .lightbox-image img {max-height:44dvh;} .lightbox-caption {width:100%;} .lightbox-caption h2 {font-size:28px;margin:8px 0;} .lightbox-controls {padding:0 18px 20px;} .lightbox-controls .ui-button {font-size:11px;padding:10px;}}

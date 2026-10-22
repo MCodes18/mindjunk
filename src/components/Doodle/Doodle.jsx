@@ -1,0 +1,14 @@
+import './Doodle.css';
+
+export default function Doodle({ kind = 'notebook', className = '' }) {
+  return <svg className={`doodle-art doodle-${kind} ${className}`} viewBox="0 0 180 150" fill="none" aria-hidden="true" focusable="false">
+    <g stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+      {kind === 'notebook' && <><path fill="var(--green)" fillOpacity=".35" d="M25 42q31-12 63 3l-5 76q-27-17-63-6z"/><path fill="var(--pink)" fillOpacity=".4" d="M88 45q35-15 64-3l8 73q-38-8-77 6z"/><path d="M25 42q31-12 63 3 35-15 64-3l8 73q-38-8-77 6-27-17-63-6zM88 45l-5 76M37 57q18-5 34 1M35 72q17-4 34 2M34 87q17-3 32 3M103 57q18-5 35-2M101 73q19-6 38-3M101 89l23-4"/><path fill="var(--yellow)" d="m129 109 26-55 9 5-27 56-11 8z"/><path d="m155 54 4-9 9 5-4 9M129 109l8 6M45 24l-5-10M59 22l4-10M17 78l-9-3M165 30v-9M161 26h9"/></>}
+      {kind === 'music' && <><path fill="var(--green)" fillOpacity=".5" d="M39 78q-6-51 42-51 48 2 44 51l-9 1q2-38-35-38-35 0-33 39z"/><path d="M39 80q-8-2-10 9l1 23q3 11 18 5l-2-38zM125 80q10-2 11 10l-1 22q-4 12-18 5l1-38z" fill="var(--pink)"/><path d="m146 51 2-25 18 5-1 23M149 28l17 5"/><ellipse cx="141" cy="52" rx="7" ry="4" transform="rotate(-18 141 52)" fill="var(--green)"/><ellipse cx="159" cy="56" rx="7" ry="4" transform="rotate(-18 159 56)" fill="var(--green)"/><path d="M19 41l-7-6M26 29l-2-10M74 134q20 8 31-1"/></>}
+      {kind === 'camera' && <><path fill="var(--green)" fillOpacity=".4" d="m26 51 32-2 10-15 37 3 8 14 37 5-4 65-123-5z"/><path d="m26 51 32-2 10-15 37 3 8 14 37 5-4 65-123-5zM25 67l123 6"/><circle cx="86" cy="86" r="25" fill="var(--pink)" fillOpacity=".6"/><circle cx="86" cy="86" r="16"/><path d="m76 80 7-6M128 61l9 1M43 43l-7-12M56 30l-1-12M132 32l8-12M18 129q-2-12-11-17M15 125q-15-1-11-11 12-1 11 11M17 130q12-12 18-4-3 11-18 4M148 134l-5-7M143 134l7-7"/></>}
+      {kind === 'letter' && <><path d="M15 108q46 31 53 6t-33-4 19 24 39-16" strokeDasharray="5 7"/><path fill="var(--pink)" fillOpacity=".55" d="m47 31 93-11 10 66-97 13z"/><path d="m47 31 93-11 10 66-97 13zM47 31l52 31 41-42M53 99l31-48M150 86l-33-38"/><path fill="var(--green)" d="M96 40q-12-10-16-2-7 10 21 19 16-21 5-24-7-1-10 7z"/><path d="m158 19 5-11M163 29l10-1M30 49l-12-3M31 62l-10 5"/></>}
+      {kind === 'sprout' && <><path d="M86 125q-4-46 1-81M87 88Q33 91 34 49q39-4 53 39" fill="var(--green)" fillOpacity=".6"/><path d="M88 68q-1-42 46-41 5 35-46 41" fill="var(--pink)" fillOpacity=".5"/><path d="m48 63 38 26M89 67l33-27M61 127q27-8 54 1M132 88v-12M126 82h12M30 22l3 9M24 30l14-4"/></>}
+      {kind === 'orbit' && <><circle cx="88" cy="77" r="35" fill="var(--green)" fillOpacity=".4"/><ellipse cx="88" cy="77" rx="73" ry="19" transform="rotate(-25 88 77)"/><path d="M59 60q12-18 30-15M105 104l8-7M32 28l3-10 5 9 10 1-8 7 1 10-9-6-9 4 3-10-7-6z" fill="var(--yellow)"/><circle cx="153" cy="60" r="5" fill="var(--pink)"/><path d="M138 123v-12M132 117h12"/></>}
+    </g>
+  </svg>;
+}

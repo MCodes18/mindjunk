@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.env
+
+# Environment files and local sensitive material
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+private/
+
+# Local agent settings, credentials, caches, and temporary diagnostics
+.codex/
+.agents/
+.aws/
+.ssh/
+.npmrc
+coverage/
+.vite/
+playwright-report/
+test-results/
+*.tsbuildinfo
+*.bak
+*.p8
+*.p7b
+*.keystore
+scripts/player-check.html

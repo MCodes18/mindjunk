@@ -1,0 +1,68 @@
+
+:root {--pixel:'Pixelify Sans',monospace;--ui:'VT323',monospace;--pink:#f2b5d6;--green:#c7f4bf;--yellow:#fff0af;--blue:#d8eaf2;--bg:#fffdf9;--text:#30313c;--border:#30313c;--muted:#686675;--shadow:rgba(48,49,60,.13);--window-radius:0;}
+.pixel-icon {display:inline-block;width:20px;height:20px;flex-shrink:0;vertical-align:middle;}
+.app-page {background-color:#fffdf9;}
+.app-content {background-image:linear-gradient(#89b98013 1px,transparent 1px),linear-gradient(90deg,#89b98013 1px,transparent 1px);background-size:20px 20px;}
+.page-heading h1 {font-family:var(--pixel);font-weight:500;letter-spacing:-.025em;font-size:clamp(38px,5vw,62px);}
+.window,.lightbox {border:3px solid var(--border);border-radius:0;background:#fffefe;box-shadow:6px 6px 0 var(--shadow);}
+.window-header,.app-header,.lightbox-bar {background-color:var(--pink);background-image:linear-gradient(#ffffff35 1px,transparent 1px),linear-gradient(90deg,#ffffff35 1px,transparent 1px);background-size:6px 6px;font:16px var(--pixel);border-bottom:3px solid var(--border);}
+.app-header {min-height:57px;}
+.window-header {min-height:43px;padding:5px 10px;}
+.window-content {background-image:linear-gradient(#89b98010 1px,transparent 1px),linear-gradient(90deg,#89b98010 1px,transparent 1px);background-size:8px 8px;}
+.close-button,.window-header .close-button {display:grid;place-items:center;width:36px;height:36px;border:3px solid var(--border);border-radius:0;background:#fff1f6;box-shadow:2px 2px 0 var(--border),inset 2px 2px 0 #fff;font-size:0;transition:transform .15s,background .15s;}
+.close-button::before {content:'';display:block;width:18px;height:18px;background:currentColor;clip-path:polygon(0 0,22% 0,22% 22%,40% 22%,40% 40%,60% 40%,60% 22%,78% 22%,78% 0,100% 0,100% 22%,78% 22%,78% 40%,60% 40%,60% 60%,78% 60%,78% 78%,100% 78%,100% 100%,78% 100%,78% 78%,60% 78%,60% 60%,40% 60%,40% 78%,22% 78%,22% 100%,0 100%,0 78%,22% 78%,22% 60%,40% 60%,40% 40%,22% 40%,22% 22%,0 22%);}
+.close-button:hover,.window-header .close-button:hover {background:var(--green);transform:translate(-1px,-1px);}
+.close-button:active {transform:translate(2px,2px);box-shadow:none;}
+.ui-button,.taskbar button,.filter-tabs button {font:19px/1 var(--ui);border:2px solid var(--border);border-radius:0;box-shadow:3px 3px 0 var(--border);background:var(--green);}
+.ui-button:hover {background:var(--pink);box-shadow:4px 5px 0 var(--border);}
+.taskbar {background:#edf6e9;border-top:3px solid var(--border);}
+.taskbar .taskbar-app {border:2px solid var(--border);border-radius:0;background:#fffcff;box-shadow:2px 2px 0 #a7b6a1;}
+.taskbar .taskbar-app.active {background:var(--pink);box-shadow:inset 2px 2px 0 #9f7693;}
+.taskbar .start-button {background:var(--pink);}
+.taskbar-time {font:17px var(--ui);}
+.desktop-icon p {font:16px/1.15 var(--pixel);background:#ffffffb5;}
+.desktop-icon:active {transform:translateY(1px);}
+.desktop-arrangement {max-width:560px;}
+.desktop-arrangement .welcome-title {font:clamp(34px,4vw,49px)/1.15 var(--pixel);letter-spacing:0;}
+.desktop-arrangement .window-content {padding:38px 26px;}
+.desktop-arrangement .window-content>p {font-size:14px;}
+.folder-front {border:3px solid var(--border);border-radius:0;background:var(--pink);box-shadow:5px 5px 0 var(--shadow);}
+.folder-tab {border:3px solid var(--border);border-radius:0;background:#d995b9;}
+.folder-front strong {font-family:var(--pixel);letter-spacing:0;}
+.folder-front>span {font-family:var(--ui);font-size:18px;}
+.folder-color-1 .folder-front {background:var(--pink);}
+.folder-color-2 .folder-front {background:var(--green);}
+.folder-preview {border:2px solid var(--border);}
+.folder-color-1 .folder-tab {background:#c99ab6;}
+.folder-color-2 .folder-tab {background:#aad3a4;}
+.personal-module {border:2px solid var(--border);border-radius:0;}
+.personal-module.module-0 {border-color:var(--border);background:#fae4f0;}
+.personal-module.module-1 {background:#e7f8e3;}
+.personal-module.module-2 {border-color:var(--border);background:#fff6d7;}
+
+.postcard,.reader-paper {border:2px solid var(--border);}
+.article-search {border:2px solid var(--border);border-radius:0;box-shadow:3px 3px 0 var(--pink);}
+.reader-arrow a,.reader-arrow button {border:2px solid var(--border);border-radius:0;font:18px var(--ui);}
+.contact-form input,.contact-form textarea {border:2px solid #73707f;border-radius:0;background:#fffefe;}
+.contact-form label,.message-to {font-family:var(--pixel);font-size:14px;}
+.contact-form input:focus-visible,.contact-form textarea:focus-visible {outline:3px solid var(--pink);}
+.contact-aside>img {display:none;}
+.section-label {border-top:2px solid var(--border);font:18px var(--ui);letter-spacing:0;}
+:focus-visible {outline:3px dashed #467a48;outline-offset:5px;}
+.app-content,.lightbox,.quote-note blockquote {scrollbar-width:auto;scrollbar-color:auto;}
+::-webkit-scrollbar {width:20px;height:20px;}
+::-webkit-scrollbar-track {background:repeating-linear-gradient(45deg,#fff1f6 0 3px,#f5dce7 3px 6px);border-left:2px solid var(--border);}
+::-webkit-scrollbar-thumb {background:repeating-linear-gradient(0deg,var(--green) 0 8px,#b2dba9 8px 10px);border:3px solid var(--border);border-radius:0;min-height:40px;box-shadow:inset 2px 2px 0 #edffe9;}
+::-webkit-scrollbar-thumb:hover {background:var(--pink);}
+::-webkit-scrollbar-button:single-button {display:block;background-color:var(--pink);border:2px solid var(--border);height:20px;background-position:center;background-repeat:no-repeat;background-size:10px;}
+::-webkit-scrollbar-button:single-button:vertical:decrement {background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath fill='%2330313c' d='M4 1h2v2h2v2h2v2H0V5h2V3h2z'/%3E%3C/svg%3E");}
+::-webkit-scrollbar-button:single-button:vertical:increment {background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath fill='%2330313c' d='M0 3h10v2H8v2H6v2H4V7H2V5H0z'/%3E%3C/svg%3E");}
+::-webkit-scrollbar-corner {background:var(--pink);}
+@supports not selector(::-webkit-scrollbar) {.app-content,.lightbox {scrollbar-color:var(--green) #f5dce7;}}
+@media(max-width:600px) {.page-heading {gap:12px;}.page-heading h1 {font-size:38px;}.taskbar button {font-size:17px;}.desktop-icon p {font-size:12px;}.taskbar-time {font-size:14px;}.ui-button {font-size:18px;}.window-content {padding:24px 20px;}.app-content {padding:24px 18px 30px;}.page-heading p {font-size:13px;}}
+@media(prefers-reduced-motion:reduce) {.equalizer.playing i {animation:none;}}
+
+.desktop {position:relative;} .welcome-doodle {width:95px;margin:0 auto 13px;}
+
+.captures-page .folder-front {background:var(--yellow);color:#30313c;}
+.captures-page .folder-tab {background:#d9c77f;}

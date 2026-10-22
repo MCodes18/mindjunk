@@ -1,0 +1,11 @@
+.desktop {min-height:calc(100dvh - var(--taskbar-height));margin-bottom:var(--taskbar-height);background-color:lightskyblue;background-image:linear-gradient(rgba(255,255,255,.2) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.2) 1px,transparent 1px);background-size:40px 40px;padding:24px clamp(20px,4vw,64px);}
+.desktop-workspace {display:grid;grid-template-columns:94px minmax(0,1fr) 94px;gap:24px;min-height:calc(100dvh - var(--taskbar-height) - 48px);align-items:center;margin:0 auto;}
+.desktop-icons {display:flex;flex-direction:column;gap:24px;align-self:start;padding-top:8px;}
+.desktop-arrangement {grid-column:2;min-width:0;width:100%;max-width:680px;justify-self:center;display:flex;align-items:center;justify-content:center;}
+.desktop-arrangement .window-content {text-align:center;}
+.desktop-arrangement .welcome-title {font-size:clamp(30px,4vw,46px);margin:0 0 22px;letter-spacing:-.04em;}
+.desktop-arrangement .window-content>p {max-width:none;}
+.desktop-arrangement .window-content>p+p {margin-top:12px;}
+.reopen {margin:0;}
+@media(max-width:800px) {.desktop-workspace {grid-template-columns:80px minmax(0,1fr) 80px;gap:12px;}.desktop-icon {max-width:80px;}}
+@media(max-width:600px) {.desktop {padding:20px 16px;}.desktop-workspace {grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr;min-height:calc(100dvh - var(--taskbar-height) - 40px);gap:28px;}.desktop-icons {width:100%;flex-direction:row;justify-content:space-between;gap:2px;padding:0;}.desktop-arrangement {grid-column:1;padding-bottom:30px;}}

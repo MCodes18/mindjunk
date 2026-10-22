@@ -1,0 +1,43 @@
+/* The small taskbar control is available on every route. */
+.taskbar .theme-toggle {display:grid;place-items:center;width:38px;min-height:36px;padding:7px;flex-shrink:0;background:var(--yellow);color:#30313c;margin-left:auto;}
+.theme-toggle + .taskbar-time {margin-left:0;}
+:root {color-scheme:light;}
+:root[data-theme="dark"] {color-scheme:dark;--bg:#19221f;--text:#edf2e9;--muted:#b6c4b6;--border:#0d1512;--shadow:#0006;--surface:#26322d;--pink:#eab0cb;--green:#badfac;--yellow:#f3e1a3;--blue:#bdd7e7;}
+[data-theme="dark"] body {background:#172731;}
+[data-theme="dark"] .desktop {background-color:#203c4d;background-image:linear-gradient(#c0deeb0c 1px,transparent 1px),linear-gradient(90deg,#c0deeb0c 1px,transparent 1px);}
+[data-theme="dark"] .app-page {background:var(--bg);}
+[data-theme="dark"] .app-content {background-image:linear-gradient(#bdd7c50a 1px,transparent 1px),linear-gradient(90deg,#bdd7c50a 1px,transparent 1px);}
+[data-theme="dark"] :is(.window,.lightbox,.music-player,.reader-paper,.article-search,.polaroid,.lightbox-image) {background:var(--surface);}
+[data-theme="dark"] :is(.window-header,.app-header,.lightbox-bar,.music-titlebar,.ui-button,.pixel-control,.reader-arrow a,.reader-arrow button,.folder-front,.folder-preview,.form-status,.page-stamp) {color:#253028;}
+[data-theme="dark"] .close-button {color:#253028;background:var(--blue);}
+[data-theme="dark"] .close-button:hover {background:var(--green);}
+[data-theme="dark"] .desktop-icon p {background:#243b49e8;color:var(--text);}
+[data-theme="dark"] .taskbar {background:#25352b;box-shadow:0 -3px 0 #a6c99a25;}
+[data-theme="dark"] .taskbar button {color:#253028;}
+[data-theme="dark"] .taskbar .taskbar-app {background:#36473b;color:var(--text);box-shadow:2px 2px 0 #0d1512;}
+[data-theme="dark"] .taskbar .taskbar-app.active {background:var(--pink);color:#253028;}
+[data-theme="dark"] .taskbar button:hover {background:var(--blue);color:#253028;}
+[data-theme="dark"] .taskbar-time {border-color:#617563;}
+[data-theme="dark"] .personal-module.module-0 {background:#3c2c35;}
+[data-theme="dark"] .personal-module.module-1 {background:#293d2c;}
+[data-theme="dark"] .personal-module.module-2 {background:#3b3828;}
+[data-theme="dark"] .doodle-art {color:#cbd8cf;}
+[data-theme="dark"] .contact-form input,[data-theme="dark"] .contact-form textarea {background:#1c2822;border-color:#819785;}
+[data-theme="dark"] input::placeholder,[data-theme="dark"] textarea::placeholder {color:#a5b3a7;opacity:1;}
+[data-theme="dark"] .contact-form .contact-note {color:var(--muted);}
+[data-theme="dark"] .message-to {border-color:#617563;}
+[data-theme="dark"] .postcard {background:#393629;}
+[data-theme="dark"] .postcard:nth-child(3n+2) {background:#3c2c35;}
+[data-theme="dark"] .postcard:nth-child(3n+3) {background:#293d2c;}
+[data-theme="dark"] .postcard-bottom {border-color:#84927c;}
+[data-theme="dark"] .polaroid-title {color:var(--text);}
+[data-theme="dark"] :is(.meta,.description,.lightbox-caption .handwritten) {color:var(--muted);}
+[data-theme="dark"] .polaroid img {background:#1a221e;border-color:#67736b;}
+[data-theme="dark"] .lightbox-image {border-color:#67736b;}
+[data-theme="dark"] .skip-link {background:var(--surface);}
+[data-theme="dark"] :focus-visible {outline-color:var(--yellow);}
+[data-theme="dark"] .article-search:focus-within {outline-color:var(--blue);}
+[data-theme="dark"] ::-webkit-scrollbar-track {background:repeating-linear-gradient(45deg,#29352f 0 3px,#36443b 3px 6px);}
+@supports not selector(::-webkit-scrollbar) {[data-theme="dark"] :is(.app-content,.lightbox) {scrollbar-color:var(--green) #29352f;}}
+@media(max-width:600px) {.taskbar {gap:8px;}.taskbar .theme-toggle {width:34px;padding:6px;}.taskbar-time {padding-left:8px;}}
+@media(max-width:420px) {.taskbar-time {display:none;}}

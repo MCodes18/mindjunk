@@ -1,0 +1,6 @@
+.desktop-icon { width:94px; display:flex; flex-direction:column; align-items:center; gap:10px; cursor:pointer; border:1px solid transparent; background:transparent; padding:8px 3px; transition:transform .2s,background .2s; }
+.icon-image {width:64px; height:64px; display:flex; justify-content:center; align-items:center;}
+.desktop-icon img {max-width:58px; max-height:58px; image-rendering:pixelated;}
+.desktop-icon p {font:12px/1.4 var(--mono); text-align:center; padding:2px 4px; background:#ffffff73;}
+.desktop-icon:hover {transform:translateY(-3px); background:#ffffff38; border-color:#ffffff91;}
+@media(max-width:600px) { .desktop-icon {width:24%; gap:5px;} .desktop-icon p {font-size:10px;} .icon-image {width:48px; height:48px;} .desktop-icon img {max-width:44px;max-height:44px;} }

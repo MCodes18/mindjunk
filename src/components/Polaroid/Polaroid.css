@@ -1,0 +1,19 @@
+.polaroid {width:100%;background:#fffdf8;padding:14px 14px 38px;border:2px solid var(--border);border-radius:0;box-shadow:10px 10px 0 rgba(0,0,0,.08);transition:transform .25s,box-shadow .25s;cursor:pointer;position:relative;text-align:left;transform:rotate(var(--tilt));display:block;}
+.polaroid:hover,.polaroid:focus-visible {transform:rotate(0deg) translateY(-7px);box-shadow:14px 14px 0 rgba(0,0,0,.1);z-index:2;}
+.polaroid img {width:100%;display:block;border:1px solid #ddd;object-fit:contain;aspect-ratio:4/5;background:#f3f0e8;}
+.polaroid-caption {display:block;margin-top:19px;}
+.polaroid-title {display:block;font:clamp(23px,2.4vw,31px)/1.15 var(--hand);margin-bottom:10px;color:#222;}
+.meta {display:block;font:10px/1.7 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:#686d63;margin-bottom:10px;}
+.description {display:block;font-size:12px;line-height:1.7;color:#555;}
+.tape-container {position:absolute;inset:0;pointer-events:none;}
+.tape {position:absolute;width:78px;height:25px;border-radius:2px;opacity:.85;box-shadow:0 2px 4px rgba(0,0,0,.08);z-index:1;}
+.tape-left {top:-10px;left:20px;}
+.tape-right {top:-10px;right:20px;}
+.tape.green {background:rgba(205,238,199,.85);}
+.tape.pink {background:rgba(247,209,220,.85);}
+.tape.yellow {background:rgba(255,244,179,.9);}
+.doodle {position:absolute;font:36px var(--hand);opacity:.8;pointer-events:none;}
+.heart {left:-20px;top:43%;}.heart::before {content:'♡';color:#c88798;}
+.star {right:-18px;top:29%;}.star::before {content:'✦';color:#c6a24c;}
+.sparkle {left:-20px;top:20%;}.sparkle::before {content:'✧';color:#7ea7c2;}
+.flower {right:-20px;top:58%;}.flower::before {content:'❀';color:#90a877;}

@@ -1,0 +1,40 @@
+.notebook-toolbar {display:flex;align-items:center;gap:14px;margin-bottom:26px;flex-wrap:wrap;}
+.article-search {display:flex;align-items:center;flex:1;max-width:520px;min-width:160px;gap:10px;padding:0 15px;border:1px solid var(--border);border-radius:4px;background:#fffef9;box-shadow:3px 3px 0 var(--shadow);}
+.article-search>span[aria-hidden] {font-size:25px;}
+.article-search:focus-within {outline:2px solid #466e83;outline-offset:3px;}
+.article-search input {min-width:0;width:100%;padding:13px 0;background:none;border:0;outline:0;font:13px var(--mono);}
+.postcard-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;padding:14px 4px 30px;}
+.postcard {display:flex;flex-direction:column;position:relative;min-width:0;background:#fffaf0;border:1px solid var(--border);padding:22px 24px;text-decoration:none;box-shadow:6px 6px 0 var(--shadow);transform:rotate(-1deg);transition:transform .22s,box-shadow .22s;}
+.postcard:nth-child(3n+2) {background:#f9ebee;transform:rotate(1deg);}
+.postcard:nth-child(3n+3) {background:#eef3e8;}
+.postcard:hover,.postcard:focus-visible {transform:rotate(0deg) translateY(-6px);box-shadow:9px 12px 0 var(--shadow);}
+.postcard-top {display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:24px;}
+.postcard-date {font:10px var(--mono);color:var(--muted);}
+.postcard-stamp {border:1px dashed #788771;outline:3px solid #e0e9d6;outline-offset:3px;width:36px;height:42px;display:grid;place-items:center;background:#e0e9d6;font-size:24px;color:#63795d;transform:rotate(8deg);}
+.postcard h2 {font:30px/1.18 var(--hand);margin-bottom:16px;overflow-wrap:anywhere;}
+.postcard p {font-size:13px;line-height:1.8;color:var(--muted);flex:1;overflow-wrap:anywhere;}
+.postcard-bottom {display:flex;justify-content:space-between;border-top:1px dashed #b8bdaf;padding-top:17px;margin-top:23px;font:11px var(--mono);}
+.reader-toolbar {display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;}
+.reader-layout {display:grid;grid-template-columns:65px minmax(0,1fr) 65px;gap:24px;align-items:start;}
+.reader-paper {background:#fffdf7;border:1px solid var(--border);box-shadow:8px 8px 0 var(--shadow);padding:clamp(24px,4vw,55px);min-width:0;animation:appear .2s ease;}
+.reader-meta {display:flex;justify-content:space-between;gap:15px;font:11px var(--mono);color:var(--muted);margin-bottom:27px;}
+.reader-paper h1 {font:clamp(32px,4vw,48px)/1.15 var(--hand);margin:0 0 32px;overflow-wrap:anywhere;}
+.reader-paper h1:focus {outline:none;}
+.article-body p {white-space:normal;overflow-wrap:anywhere;font-size:16px;line-height:1.95;margin-bottom:24px;}
+.article-body p:last-child {margin-bottom:0;}
+.reader-arrow {position:sticky;top:35vh;}
+.reader-arrow a,.reader-arrow button {width:100%;display:flex;align-items:center;flex-direction:column;gap:7px;border:1px solid var(--border);padding:10px 6px;background:var(--green);text-decoration:none;box-shadow:3px 3px 0 var(--shadow);font:10px var(--mono);transition:transform .2s;}
+.reader-arrow a:hover {transform:translateY(-3px);}
+.reader-arrow span:first-child {font-size:26px;}
+@media(max-width:950px) {.postcard-grid {grid-template-columns:repeat(2,minmax(0,1fr));}.reader-layout {gap:14px;grid-template-columns:55px minmax(0,1fr) 55px;}}
+@media(max-width:650px) {.postcard-grid {grid-template-columns:1fr;padding:10px 4px 25px;gap:24px;}.reader-layout {grid-template-columns:1fr 1fr;gap:20px;}.reader-paper {grid-row:1;grid-column:1/-1;}.reader-arrow {grid-row:2;position:static;}.reader-arrow a,.reader-arrow button {flex-direction:row;justify-content:center;}.reader-meta {font-size:10px;}.article-body p {font-size:15px;}.notebook-toolbar {gap:12px;}}
+
+.article-body {overflow-wrap:anywhere;line-height:1.8;}
+.article-body img {display:block;max-width:100%;height:auto;margin:24px auto;border:2px solid var(--border);}
+.article-body :is(h2,h3,h4,h5,h6) {margin:28px 0 12px;line-height:1.3;}
+.article-body :is(ul,ol) {padding-left:26px;margin:16px 0 24px;}
+.article-body blockquote {border-left:4px solid var(--green);padding-left:18px;margin:24px 0;color:var(--muted);}
+.article-body pre {overflow-x:auto;padding:16px;border:1px solid var(--border);margin:24px 0;}
+.article-body code {font-family:var(--mono);font-size:.9em;}
+.article-body hr {border:0;border-top:1px solid var(--border);margin:24px 0;}
+.article-body a {text-decoration:underline;text-underline-offset:3px;}
