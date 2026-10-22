@@ -34,7 +34,7 @@ jobs:
         run: |
           node -e "for (const k of ['VITE_EMAILJS_SERVICE_ID','VITE_EMAILJS_TEMPLATE_ID','VITE_EMAILJS_PUBLIC_KEY']) { if (!process.env[k]) { console.error('Missing repository variable: '+k); process.exitCode=1; } }"
           npm run build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
   deploy:
