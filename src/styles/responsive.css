@@ -19,7 +19,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .desktop-arrangement .window-content {padding:24px 18px;}
   .desktop-arrangement .welcome-title {font-size:34px;margin-bottom:16px;}
   .welcome-doodle {width:70px;}
-  .music-player,.music-player-spotify {width:min(300px,calc(100% - 36px));right:18px;}
+  .music-player,.music-player-spotify {width:min(300px,calc(100% - 36px));left:0;right:0;margin-inline:auto;}
   .quote-note {width:min(260px,100%);margin:26px auto 22px;}
   .quote-note blockquote {max-height:none;overflow:visible;}
   .app-header {padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px));}

@@ -1,4 +1,4 @@
-.year-folders {display:flex;flex-wrap:wrap;gap:45px;align-items:center;padding:28px 12px 40px;}
+.year-folders {display:flex;flex-wrap:wrap;gap:45px;align-items:center;width:100%;min-width:0;padding:28px 12px 40px;}
 .year-folder {display:block;width:265px;max-width:100%;height:225px;position:relative;color:var(--text);text-decoration:none;transition:transform .22s;flex-shrink:0;}
 .year-folder:hover,.year-folder:focus-visible {transform:translateY(-7px) rotate(-2deg);}
 .folder-tab {position:absolute;top:12px;left:0;width:110px;height:42px;border:1px solid var(--border);border-radius:9px 12px 0 0;background:#e8d39b;}
@@ -13,4 +13,4 @@
 .folder-color-2 .folder-front {background:var(--green);}
 .folder-paper-title {display:block;font:14px/1.2 var(--hand);overflow:hidden;max-height:34px;}
 .folder-paper-lines {display:block;height:70px;margin-top:8px;background:repeating-linear-gradient(transparent 0 10px,#b9c2b2 10px 11px);}
-@media(max-width:700px) {.year-folders {gap:30px;padding:20px 10px 30px;}.year-folder {width:min(265px,100%);}}
+@media(max-width:700px) {.year-folders {gap:30px;justify-content:center;padding:20px 10px 30px;}.year-folder {width:265px;}}
